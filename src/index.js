@@ -55,7 +55,7 @@ function returnCounter(number = 0) {
         return ++number;
     }
 }
-returnCounter();
+
 /*
 
  Задание 6 *:
