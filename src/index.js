@@ -121,7 +121,6 @@ function calculator(number = 0) {
         dif: function() {
 
             for (var i = 0; i < arguments.length; i++) {
-               /* console.log(number);*/
                 number = number - arguments[i];
             }
 
