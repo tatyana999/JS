@@ -8,6 +8,7 @@
  * @param {function} fn - обработчик
  */
 function addListener(eventName, target, fn) {
+
     target.addEventListener(eventName, fn);
 }
 /**
@@ -73,6 +74,7 @@ function delegate(target, fn) {
  */
 function once(target, fn) {
     target.addEventListener('click', fn);
+
     target.addEventListener('click', function () {
         target.removeEventListener('click', fn);
     })

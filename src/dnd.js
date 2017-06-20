@@ -23,6 +23,15 @@ let homeworkContainer = document.querySelector('#homework-container');
  * @return {Element}
  */
 function createDiv() {
+
+  var div = document.createElement('div');
+  div.setAttribute('class', 'draggable-div');
+  div.style.left = Math.random() + 'px';
+  div.style.top = Math.random() + 'px';
+  div.style.weight = Math.random() + 'px';
+  div.style.height = Math.random() + 'px';
+
+  return div;
 }
 
 /**
@@ -31,6 +40,7 @@ function createDiv() {
  * @param {Element} target
  */
 function addListeners(target) {
+
 }
 
 let addDivButton = homeworkContainer.querySelector('#addDiv');
