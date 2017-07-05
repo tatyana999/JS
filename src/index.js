@@ -41,9 +41,10 @@ function createCookie(name, value) {
  * @param name - имя
  */
 function deleteCookie(name) {
-    var date = new Date(); // Берём текущую дату
-    date.setTime(date.getTime() - 1); // Возвращаемся в "прошлое"
+    var date = new Date();
+    date.setTime(date.getTime() - 1);
     document.cookie = name += "=; expires=" + date.toGMTString();
+
 }
 
 export {
